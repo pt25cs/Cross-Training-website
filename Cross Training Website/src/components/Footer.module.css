@@ -1,0 +1,76 @@
+/*
+ * Footer.module.css — Styles for the site footer
+ *
+ * Uses CSS custom properties from index.css (Color Scheme tokens).
+ * Requirements: 7.1, 7.3
+ */
+
+/* ── Outer footer bar ────────────────────────────────────── */
+.footer {
+  background-color: var(--color-bg-section);
+  border-top: 1px solid var(--color-border);
+  padding: var(--space-12) var(--space-6);
+  margin-top: auto;
+}
+
+/* ── Inner max-width container ───────────────────────────── */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ── Grid: single column on mobile, multi-column at 768px+ ─ */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+}
+
+/* ── Columns ─────────────────────────────────────────────── */
+.brandColumn,
+.socialColumn,
+.contactColumn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+/* ── Copyright text ──────────────────────────────────────── */
+.copyright {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+}
+
+/* ── Section label (e.g. "Follow Us", "Contact") ─────────── */
+.socialLabel {
+  color: var(--color-white);
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+}
+
+/* ── Social / contact links ──────────────────────────────── */
+.socialLink {
+  color: var(--color-silver);
+  text-decoration: none;
+  font-size: var(--text-sm);
+  transition: color var(--transition-fast);
+}
+
+.socialLink:hover {
+  color: var(--color-white);
+}

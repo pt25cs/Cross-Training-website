@@ -1,0 +1,130 @@
+/*
+ * Navigation.module.css — Mobile-first styles for the site header
+ *
+ * Requirements: 1.3, 1.6, 7.1, 7.3, 7.4
+ */
+
+/* ── Outer nav bar ───────────────────────────────────────── */
+.nav {
+  background-color: var(--color-black);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* ── Inner container ─────────────────────────────────────── */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-4) var(--space-6);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+/* ── Brand wordmark ──────────────────────────────────────── */
+.brand {
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-weight: var(--font-bold);
+  font-size: var(--text-lg);
+  text-decoration: none;
+  letter-spacing: var(--tracking-wide);
+  flex-shrink: 0;
+}
+
+.brand:hover {
+  color: var(--color-white);
+  opacity: 0.85;
+}
+
+/* ── Hamburger button (mobile only) ─────────────────────── */
+.hamburger {
+  display: block; /* visible on mobile by default */
+  background: none;
+  border: none;
+  color: var(--color-white);
+  font-size: var(--text-xl);
+  cursor: pointer;
+  padding: var(--space-2);
+  line-height: 1;
+  border-radius: var(--radius-sm);
+  transition: opacity var(--transition-fast);
+}
+
+.hamburger:hover {
+  opacity: 0.7;
+}
+
+/* ── Nav links list ──────────────────────────────────────── */
+.navLinks {
+  display: none; /* hidden by default on mobile */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* Open state: full-width vertical column */
+.navLinksOpen {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-2) 0;
+}
+
+/* ── Individual link ─────────────────────────────────────── */
+.link {
+  display: block;
+  color: var(--color-silver);
+  text-decoration: none;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  transition: color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.link:hover {
+  color: var(--color-white);
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+/* Active link accent */
+.activeLink {
+  color: var(--color-accent);
+}
+
+.activeLink:hover {
+  color: var(--color-accent-hover);
+}
+
+/* ── Desktop breakpoint ──────────────────────────────────── */
+@media (min-width: 768px) {
+  /* Hide hamburger on desktop */
+  .hamburger {
+    display: none;
+  }
+
+  /* Always show nav links in a row on desktop */
+  .navLinks {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-2);
+    width: auto;
+    padding: 0;
+  }
+
+  /* Single row layout: brand left, links right */
+  .container {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}

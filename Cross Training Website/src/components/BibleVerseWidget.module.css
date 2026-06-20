@@ -1,0 +1,113 @@
+/* ============================================================
+   BibleVerseWidget.module.css — iPhone lock-screen widget style
+   Uses CSS custom properties defined in src/index.css
+   Requirements: 6.5, 7.1
+   ============================================================ */
+
+/* ----------------------------------------------------------
+   Widget container — compact card, not a modal/overlay
+---------------------------------------------------------- */
+.widget {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  max-width: 400px;
+  width: 100%;
+
+  /* Card background and border — same token as other cards */
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+
+  padding: var(--space-5) var(--space-6);
+  box-shadow: var(--shadow-md);
+
+  /* Self-contained — does not overflow its parent */
+  overflow: hidden;
+}
+
+/* ----------------------------------------------------------
+   Header row — icon + "Verse of the Day" label
+---------------------------------------------------------- */
+.header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.icon {
+  font-size: var(--text-sm);
+  line-height: 1;
+}
+
+.label {
+  font-size: var(--text-xs);
+  font-weight: var(--font-semibold);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+/* ----------------------------------------------------------
+   Verse text — italic, readable size
+---------------------------------------------------------- */
+.verseText {
+  font-size: var(--text-sm);
+  font-style: italic;
+  font-weight: var(--font-normal);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text);
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+/* ----------------------------------------------------------
+   Scripture reference — right-aligned, muted silver
+---------------------------------------------------------- */
+.reference {
+  font-size: var(--text-xs);
+  font-weight: var(--font-medium);
+  color: var(--color-text-muted);
+  text-align: right;
+  letter-spacing: var(--tracking-wide);
+  margin: 0;
+}
+
+/* ----------------------------------------------------------
+   Skeleton shimmer — loading placeholder
+---------------------------------------------------------- */
+
+@keyframes shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+
+.skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.skeletonLine {
+  height: 14px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(
+    90deg,
+    rgba(168, 176, 187, 0.08) 0%,
+    rgba(168, 176, 187, 0.18) 50%,
+    rgba(168, 176, 187, 0.08) 100%
+  );
+  background-size: 800px 100%;
+  animation: shimmer 1.6s ease-in-out infinite;
+}
+
+/* Make the reference skeleton line shorter and right-aligned */
+.skeletonReference {
+  height: 11px;
+  margin-left: auto;
+}

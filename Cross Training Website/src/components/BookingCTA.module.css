@@ -1,0 +1,59 @@
+/* ============================================================
+   BookingCTA.module.css — Booking CTA button/link styles
+   Uses CSS custom properties defined in src/index.css
+   Requirements: 7.1
+   ============================================================ */
+
+/* Base styles shared by both variants */
+.cta {
+  display: inline-block;
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-md);
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  font-weight: var(--font-bold);
+  letter-spacing: var(--tracking-wide);
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast),
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast);
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* -------------------------------------------------------
+   Primary variant — filled blue button
+   ------------------------------------------------------- */
+.primary {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  border: 2px solid var(--color-blue);
+  box-shadow: var(--shadow-sm);
+}
+
+.primary:hover,
+.primary:focus-visible {
+  background-color: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+  color: var(--color-white);
+  box-shadow: var(--shadow-md);
+}
+
+/* -------------------------------------------------------
+   Secondary variant — transparent / outlined button
+   ------------------------------------------------------- */
+.secondary {
+  background-color: transparent;
+  color: var(--color-blue);
+  border: 2px solid var(--color-blue);
+}
+
+.secondary:hover,
+.secondary:focus-visible {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  border-color: var(--color-blue);
+}
