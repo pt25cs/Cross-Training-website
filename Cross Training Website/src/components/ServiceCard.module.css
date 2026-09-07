@@ -93,6 +93,8 @@
   font-weight: var(--font-bold);
   color: var(--color-accent);
   margin: 0;
+  /* Honor \n line breaks in the price string (e.g. Private vs Group pricing) */
+  white-space: pre-line;
 }
 
 /* -------------------------------------------------------

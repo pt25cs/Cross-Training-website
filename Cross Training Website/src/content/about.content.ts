@@ -125,7 +125,7 @@ export const aboutContent: AboutContent = {
        * Leave as "" until a real headshot is available.
        * The component will display a styled CSS placeholder block instead.
        */
-      photoUrl: 'https://ibb.co/0RTDX2j1',
+      photoUrl: 'https://i.ibb.co/4nzmftZC/IMG-2036.jpg',
 
       /**
        * ⚠️  PLACEHOLDER bio — replace with the real coach's story before launch.
@@ -151,7 +151,7 @@ export const aboutContent: AboutContent = {
       name: 'Paul Thomas',
 
       // Picture url
-      photoUrl: 'https://ibb.co/0RWSBKqJ',
+      photoUrl: 'https://i.ibb.co/8LRpzbM8/IMG-1859.jpg',
 
       // Bio
       bio:

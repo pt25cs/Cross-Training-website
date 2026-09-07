@@ -13,6 +13,7 @@
  * Requirements: 2.1, 2.2, 2.3, 2.4, 2.7
  */
 
+import { Link } from 'react-router-dom';
 import { homeContent } from '../content/home.content';
 import { BookingCTA } from '../components/BookingCTA';
 import { BibleVerseWidget } from '../components/BibleVerseWidget';
@@ -55,13 +56,19 @@ export function HomePage() {
         </h2>
         <ul className={styles.disciplinesGrid} role="list">
           {homeContent.disciplines.map((discipline) => (
-            <li key={discipline.name} className={styles.disciplineTile}>
-              <span className={styles.disciplineName}>{discipline.name}</span>
-              {discipline.status === 'coming_soon' && (
-                <span className={styles.comingSoonBadge} aria-label={`${discipline.name} — Coming Soon`}>
-                  Coming Soon
-                </span>
-              )}
+            <li key={discipline.name}>
+              <Link
+                to="/services"
+                className={styles.disciplineTile}
+                aria-label={`${discipline.name} — view training services`}
+              >
+                <span className={styles.disciplineName}>{discipline.name}</span>
+                {discipline.status === 'coming_soon' && (
+                  <span className={styles.comingSoonBadge} aria-label={`${discipline.name} — Coming Soon`}>
+                    Coming Soon
+                  </span>
+                )}
+              </Link>
             </li>
           ))}
         </ul>
