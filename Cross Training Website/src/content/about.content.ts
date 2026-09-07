@@ -125,7 +125,7 @@ export const aboutContent: AboutContent = {
        * Leave as "" until a real headshot is available.
        * The component will display a styled CSS placeholder block instead.
        */
-      photoUrl: '',
+      photoUrl: 'https://ibb.co/0RTDX2j1',
 
       /**
        * ⚠️  PLACEHOLDER bio — replace with the real coach's story before launch.
@@ -151,10 +151,20 @@ export const aboutContent: AboutContent = {
       name: 'Paul Thomas',
 
       // Picture url
-      photoUrl: '',
+      photoUrl: 'https://ibb.co/0RWSBKqJ',
 
       // Bio
-      bio: '',
+      bio:
+        'Soccer has always been more than a sport to Coach Paul — it\'s where heart, ' +
+        'discipline, and faith come together. Having played the game at a competitive level, ' +
+        'he coaches young athletes to lead first with the right attitude: a devotion to the ' +
+        'game and to God that shapes how you train, how you compete, and how you carry ' +
+        'yourself. Once that foundation is set, the footwork, touch, and fundamentals grow ' +
+        'from there.\n\n' +
+        'He believes the effort we pour in today is preparing us for far more than the next ' +
+        'match. Every session is a chance to become the person God is calling us to be — to ' +
+        'stay humble, stay faithful, and trust that the work we do now is shaping the future ' +
+        'He has planned for us.',
 
       qualifications: [
         'Former High School Varsity Athlete',
