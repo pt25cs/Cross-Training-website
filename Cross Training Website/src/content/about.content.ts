@@ -119,7 +119,7 @@ export const aboutContent: AboutContent = {
       /**
        * ⚠️  PLACEHOLDER — replace with the real coach's name before launch.
        */
-      name: 'Coach Placeholder',
+      name: 'Dylan Mathew',
 
       /**
        * Leave as "" until a real headshot is available.
@@ -131,8 +131,8 @@ export const aboutContent: AboutContent = {
        * ⚠️  PLACEHOLDER bio — replace with the real coach's story before launch.
        */
       bio:
-        'Coach Placeholder brings a deep love for the game and an even deeper commitment ' +
-        'to developing the whole athlete. With years of experience training youth players at ' +
+        'Coach Dylan brings a deep love for the game and an even deeper commitment ' +
+        'to developing the whole athlete. With experience training youth players at ' +
         'every skill level, the approach here is simple: build fundamentals, build confidence, ' +
         'and build character.\n\n' +
         'Every drill has a purpose. Every session is an opportunity to grow — not just as a ' +
@@ -140,10 +140,26 @@ export const aboutContent: AboutContent = {
         'honor God in everything you do.',
 
       qualifications: [
-        'Certified Youth Coach',
-        'Former Collegiate Athlete',
+        'Former High School Varsity Athlete',
         'Basketball Specialist',
       ],
+    },
+    {
+      /**
+       * Paul's profile
+       */
+      name: 'Paul Thomas',
+
+      // Picture url
+      photoUrl: '',
+
+      // Bio
+      bio: '',
+
+      qualifications: [
+        'Former High School Varsity Athlete',
+        'Soccer Specialist',
+      ]
     },
   ],
 

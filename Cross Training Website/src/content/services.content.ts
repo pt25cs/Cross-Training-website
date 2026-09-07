@@ -109,7 +109,7 @@ export const servicesContent: ServicesContent = {
        * ⚠️  PLACEHOLDER price — update with final pricing before launch.
        * Current placeholder: $50 per session.
        */
-      price: '$50 / session',
+      price: 'Private: $60 / session\tGroup of 2-4: $100 / session',
 
       /** Basketball is the active, flagship offering */
       status: 'active',
@@ -131,9 +131,9 @@ export const servicesContent: ServicesContent = {
        * Price not yet set — leave as "" until the program launches.
        * The component will hide the price field when this is empty.
        */
-      price: '',
+      price: 'Private: $45 / session\tGroup of 2-4: $72 / session',
 
-      status: 'coming_soon',
+      status: 'active',
     },
     {
       id: 'volleyball-training',

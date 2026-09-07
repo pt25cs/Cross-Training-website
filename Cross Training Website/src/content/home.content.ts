@@ -119,21 +119,21 @@ export const homeContent: HomeContent = {
     {
       /** Soccer sessions are being developed — show Coming Soon badge */
       name: 'Soccer',
-      status: 'coming_soon',
+      status: 'active',
     },
     {
       /** Volleyball sessions are being developed — show Coming Soon badge */
-      name: 'Volleyball',
+      name: 'Agility',
       status: 'coming_soon',
     },
     {
       /** Weight Training program is being developed — show Coming Soon badge */
-      name: 'Weight Training',
+      name: 'Volleyball',
       status: 'coming_soon',
     },
     {
       /** Footwork & Agility program is being developed — show Coming Soon badge */
-      name: 'Footwork',
+      name: 'Weight Training',
       status: 'coming_soon',
     },
   ],

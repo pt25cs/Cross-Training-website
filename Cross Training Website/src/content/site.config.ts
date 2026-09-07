@@ -59,12 +59,12 @@ export const siteConfig: SiteConfig = {
   /**
    * ⚠️  REPLACE before launch — use the real Instagram handle (no @).
    */
-  instagramHandle: 'crosstrainingco',
+  instagramHandle: 'crosstraining.dev',
 
   /**
    * ⚠️  REPLACE before launch — keep in sync with instagramHandle above.
    */
-  instagramUrl: 'https://instagram.com/crosstrainingco',
+  instagramUrl: 'https://www.instagram.com/crosstraining.dev/?utm_source=ig_web_button_share_sheet',
 
   /**
    * ADD the real email address when available.
